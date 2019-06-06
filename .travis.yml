@@ -1,3 +1,7 @@
 language: ocaml
-ocaml:
-    - 4.07.1
+env: OCAML_VERSION=4.07
+os: osx
+
+build: [ make "test" ]
+
+build-test: [ "./main" ]
